@@ -1,0 +1,102 @@
+/* common */
+body {
+  margin: 0;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* header */
+header {
+  height: 20vh;
+  background-color: #5b5959;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: serif;
+}
+.title {
+  flex: 6;
+}
+.title h1 {
+  margin-left: 30px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0 0 10px 30px;
+}
+.menus {
+  flex: 4;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* main */
+main {
+  font-size: 14px;
+}
+main h1 {
+  text-align: center;
+  margin: 100px 0;
+  background-color: #0b0808ab;
+  color: white;
+}
+.main-visual {
+  height: 80vh;
+  margin-top: 50px;
+  background-image: url("../img/スクリーンショット 2022-07-15 15.01.23.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-visual h1 {
+  margin: 0;
+}
+.introduce {
+  margin-bottom: 100px;
+}
+article > * {
+  text-align: center;
+}
+article h2 {
+  margin: 40px 0;
+}
+section {
+  text-align: center;
+}
+section p {
+  margin: 20px 0;
+}
+section h2 {
+  margin-bottom: 10px;
+}
+#open,
+#close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 16px auto;
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+/* footer */
