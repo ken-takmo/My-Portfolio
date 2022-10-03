@@ -14,14 +14,20 @@ a {
 }
 /* header */
 header {
-  height: 20vh;
-  background-color: #5b5959;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* background-color: #5b5959; */
+  background-color: #a00053;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: serif;
 }
+
 .title {
   flex: 6;
 }
@@ -43,26 +49,30 @@ li {
   justify-content: center;
   align-items: flex-end;
 }
+header a:hover {
+  color: rgb(239, 246, 30);
+  transition: 1s;
+}
 /* main */
 main {
   font-size: 14px;
 }
 main h1 {
   text-align: center;
-  margin: 100px 0;
   background-color: #0b0808ab;
   color: white;
 }
 .main-visual {
-  height: 80vh;
-  margin-top: 50px;
+  height: 90vh;
   background-image: url("../img/スクリーンショット 2022-07-15 15.01.23.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
+  background-color: #a00053;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10vh;
 }
 .main-visual h1 {
   margin: 0;
@@ -79,13 +89,40 @@ article h2 {
 section {
   text-align: center;
 }
+#about,
+#apps {
+  padding-top: 10vh;
+}
+.fade-in-bottom {
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 section p {
   margin: 20px 0;
 }
 section h2 {
   margin-bottom: 10px;
 }
-#open,
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.3s 0s ease-out;
+}
+
+/* #open,
 #close {
   cursor: pointer;
   width: 200px;
@@ -94,9 +131,10 @@ section h2 {
   text-align: center;
   padding: 12px 0;
   margin: 16px auto;
-}
+} */
 img {
   width: 50%;
   height: 50%;
 }
+
 /* footer */
