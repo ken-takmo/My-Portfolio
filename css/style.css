@@ -57,11 +57,6 @@ header a:hover {
 main {
   font-size: 14px;
 }
-main h1 {
-  text-align: center;
-  background-color: #0b0808ab;
-  color: white;
-}
 .main-visual {
   height: 90vh;
   background-image: url("../img/スクリーンショット 2022-07-15 15.01.23.png");
@@ -71,14 +66,32 @@ main h1 {
   background-color: #a00053;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 10vh;
 }
 .main-visual h1 {
   margin: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
 }
+
+article h1 {
+  text-decoration: underline;
+  text-decoration-color: #a00053;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+  font-size: 30px;
+}
+
+#about {
+  /* background-color: blue; */
+}
+
 .introduce {
   margin-bottom: 100px;
+}
+.my-hobby {
 }
 article > * {
   text-align: center;
