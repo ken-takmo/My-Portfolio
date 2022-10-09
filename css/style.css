@@ -63,7 +63,7 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-color: #a00053;
+  background-color: rgb(166 2 88);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -74,8 +74,14 @@ main {
   color: white;
   text-align: center;
   margin-bottom: 40px;
+  width: 80vw;
 }
 
+article > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 article h1 {
   text-decoration: underline;
   text-decoration-color: #a00053;
@@ -84,27 +90,50 @@ article h1 {
   font-size: 30px;
 }
 
-#about {
-  /* background-color: blue; */
+#about,
+#apps {
+  padding-top: 10vh;
 }
 
+#about {
+  background-color: #fafafa;
+  height: 90vh;
+  width: 60vw;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+#apps {
+  background-color: #fafafa;
+  width: 60vw;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+
+.article1 {
+  width: 100%;
+  background-color: #ffeb3b;
+}
+.article2 {
+  width: 100%;
+  background-color: rgb(3 167 244);
+}
 .introduce {
   margin-bottom: 100px;
 }
 .my-hobby {
 }
+.hobby2 > p:last-child,
+.brochure-app > p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
 article > * {
   text-align: center;
+  color: black;
 }
 article h2 {
   margin: 40px 0;
 }
 section {
   text-align: center;
-}
-#about,
-#apps {
-  padding-top: 10vh;
 }
 .fade-in-bottom {
   opacity: 0;
@@ -146,8 +175,17 @@ section h2 {
   margin: 16px auto;
 } */
 img {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
+  border: 2px solid black;
 }
 
 /* footer */
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+}
