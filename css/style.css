@@ -178,6 +178,11 @@ img {
   border: 2px solid black;
 }
 
+#brochure:hover,
+#review-app {
+  cursor: pointer;
+}
+
 /* footer */
 footer {
   height: 10vh;
